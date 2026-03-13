@@ -1273,7 +1273,7 @@
                 renderEdu();
             }
 
-            // ── Cover Letter ──
+            // ── 자기소개서란 Cover Letter ──
             function renderCL() {
                 const container = document.getElementById("cl-sections");
                 container.innerHTML = "";
@@ -1285,7 +1285,7 @@
                     item.className = "cl-item";
                     item.style.marginBottom = "0";
                     item.innerHTML = `
-      <div class="cl-num">${String(si + 1).padStart(2, "0")}</div>
+      <div class="cl-num"></div>
       <div>
         <h3 class="cl-h3 editable" contenteditable="true" data-ph="소제목">${sec.title}</h3>
         <p class="cl-body editable" contenteditable="true" data-ph="내용">${sec.body}</p>
